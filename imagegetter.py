@@ -4,7 +4,7 @@ import urlparse
 
 url = "https://www.walmart.com/ip/54649026"
 
-def imageurl():
+def imageurl(url):
     result = requests.get(url)
     soup = BeautifulSoup(result.text, "html.parser")
 
